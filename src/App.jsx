@@ -9,6 +9,9 @@ import Login from './pages/Login/Login'
 <Router>
 <Routes>
 
+  
+<Route path="/" element={<Login />} />         {/* 👈 This line fixes the issue */}
+
  <Route path="/dashboard" element={<Home/>}/>
  <Route path="/login" element={<Login/>}/>
  <Route path="/signup" element={<SignUp/>}/>
